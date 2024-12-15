@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Sonar Mine Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Underwater Sonar Mine Detector</h1>
+        <p>Predict whether sonar readings indicate a mine or a harmless object</p>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload Sonar Data</h2>
+            <form id="upload-form">
+                <input type="file" id="file-input" accept=".csv, .txt" />
+                <button type="button" id="upload-btn">Upload and Predict</button>
+            </form>
+        </section>
+
+        <section class="manual-input-section">
+            <h2>Manual Input</h2>
+            <form id="manual-form">
+                <label for="reading">Enter Sonar Readings (comma-separated):</label>
+                <input type="text" id="reading" placeholder="e.g., 0.1, 0.5, 0.8, ...">
+                <button type="button" id="predict-btn">Predict</button>
+            </form>
+        </section>
+
+        <section class="results-section" id="results">
+            <h2>Prediction Results</h2>
+            <div id="result-output">Your results will appear here</div>
+        </section>
+
+        <section class="visualization-section">
+            <h2>Data Visualization</h2>
+            <canvas id="chart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Project by [Your Name] | <a href="https://github.com/your-repo" target="_blank">View on GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
